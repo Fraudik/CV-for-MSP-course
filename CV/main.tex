@@ -1,15 +1,72 @@
-\documentclass[10pt,a4paper]{article} 
+\documentclass[10pt,a4paper]{altacv}
 
-\usepackage[T2A]{fontenc}		
-\usepackage[utf8]{inputenc}		
-\usepackage[english,russian]{babel}	
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1cm,bottom=1cm}
+
+\usepackage[default]{lato}
+\usepackage[T1,T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{csquotes}
+
+\definecolor{VividPurple}{HTML}{008080}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
 
 \begin{document}
-\begin{center}
-Блинов Илья Игоревич, будущее резюме
-\end{center}
-Если вы видите это, то вы решили посмотреть историю. В данный момент это лишь заготовка под резюме. Просто проверка работы GithubActions. Возможно, здесь можно оставить пасхалку? \\
-\begin{center}
-778-330-2389
-\end{center}
+\name{Блинов Илья}
+\tagline{}
+\personalinfo{
+  \email{iiblinov@edu.hse.ru}
+  \location{Тула, Россия}
+  \linebreak
+  \github{https://github.com/Fraudik} 
+}
+
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+\AtBeginEnvironment{itemize}{\small}
+
+\cvsection[page1sidebar]{Обучение}
+\cvevent{Компьютерные науки и анализ данных}{Факультет компьютерных наук НИУ ВШЭ }{2021 - настоящее время}{Москва, Россия}
+\textsc{Текущий GPA: 9.64, 1-ое место в рейтинге}
+\\
+\vspace{10pt}
+\cvevent{Инженерный класс}{Лицей №2}{2014 - 2021}{Тула, Россия}
+\textsc{Выпустился с золотой медалью}
+\\
+\vspace{10pt}
+\cvevent{Дополнительное образование}{Яндекс Лицей}{2018 - 2020}{Тула, Россия}
+\textsc{Закончил с отличием (вошёл в топ выпускников проекта). Номер сертификата: 2002 21215}
+\\
+\vspace{10pt}
+\cvevent{Дополнительное образование}{Летняя олимпиадная школа Фоксфорда}{Август 2019}{Московская область, Россия}
+\textsc{}
+
+
+\cvsection{Проекты}
+\begin{itemize}
+\item Создание игрового бота для Discord с продвинутыми алгоритмами поведения \\
+Выпускная работа в Яндекс Лицее. \\
+(https://github.com/Fraudik/Game-bot-project)
+\item Алгоритмы реализации основных численных методов на компьютере по теме "Сортировка" \\ Работа победила в номинации “Программирование” в VI Открытом региональном конкурсе "От школьных проектов --- к научным открытиям". \\
+(https://github.com/Fraudik/Private-Projects/tree/Sorting-Algrorithms)
+\end{itemize}
+
+\cvsection{Олимпиады}
+\begin{itemize}
+\item Региональная физико-математическая олимпиада имени академика А.Г. Шипунова, 2019
+\end{itemize}
+
+\clearpage
+
+
 \end{document}
