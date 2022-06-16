@@ -14,8 +14,9 @@ jobs:
       - name: Make CV pdf
         uses: ./
         id: publish
-      - run: ls ${{ github.workspace }}
-      - run: cp ${{ github.workspace }}/CV/main.pdf CV.pdf
+      - run: ls ${{ github.workspace }}/CV
+      - run: ls ${{ github.workspace }} -R
+      - run: cp ${{ github.workspace }}/CV/CV/main.pdf CV.pdf
       - run: git add CV.pdf
       - run: git commit -m "Publish CV.pdf"
       - run: git push origin HEAD:gh-pages --force
