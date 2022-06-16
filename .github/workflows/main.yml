@@ -1,16 +1,19 @@
-on: [push]
+name: Compile and publish CV
+on:
+  push:
+    branches:
+      main
 
 jobs:
-  make_cv_pdf_job:
+  update_cv:
     runs-on: ubuntu-latest
-    name: A job to make pdf
+    name: A job to make CV
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
-    - name: Make CV pdf
-      uses: ./
-    - name: Upload artifact
-      uses: actions/upload-artifact@v2
-      with:
-        name: CV
-        path: CV/main.pdf
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Make CV pdf
+        uses: ./
+        id: hello
+      - run: git add CV.pdf
+      - run: git commit -m "Publish CV.pdf"
+      - run: git push origin HEAD:gh-pages --force
