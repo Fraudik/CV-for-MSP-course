@@ -15,6 +15,8 @@ jobs:
         uses: ./
         id: publish
       - run: ls
-      - run: git add CV/main.pdf
-      - run: git commit -m "Publish CV.pdf"
+      - run: cd CV
+      - run: ls
+      - run: git add CV/main.tex
+      - run: git commit -m "Publish CV.tex"
       - run: git push origin HEAD:gh-pages --force
