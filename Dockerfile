@@ -17,5 +17,5 @@ RUN cp /etc/apt/sources.list /etc/apt/sources.list.bak && sed -i -re 's/([a-z]{2
     texlive-pictures \
     texlive-science
 
-RUN cd /CV
-CMD pdflatex -interaction=nonstopmode main.tex
+RUN ["chmod", "+x", "/entrypoint.sh"]
+ENTRYPOINT ["/entrypoint.sh"]
