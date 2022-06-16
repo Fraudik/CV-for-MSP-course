@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Make CV pdf
+      - name: Compile CV
         uses: ./
       - name: Copy pdf files
         run: |
