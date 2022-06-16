@@ -14,10 +14,8 @@ jobs:
       - name: Make CV pdf
         uses: ./
         id: publish
-      - run: git config user.email "iiblinov@edu.hse.ru"
-      - run: git config user.name "Blinov Ilya"
-      - run: ls
-      - run: cd CV && ls
-      - run: git add CV/main.tex
-      - run: git commit -m "Publish CV.tex"
+      - run: ls ${{ github.workspace }}
+      - run: cp ${{ github.workspace }}/CV/main.pdf CV.pdf
+      - run: git add CV.pdf
+      - run: git commit -m "Publish CV.pdf"
       - run: git push origin HEAD:gh-pages --force
