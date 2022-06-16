@@ -15,7 +15,6 @@ RUN cp /etc/apt/sources.list /etc/apt/sources.list.bak && sed -i -re 's/([a-z]{2
     texlive-latex-extra \
     texlive-latex-recommended \
     texlive-pictures \
-    texlive-science \
-    git
+    texlive-science
 
 CMD pdflatex -interaction=nonstopmode CV/main.tex
