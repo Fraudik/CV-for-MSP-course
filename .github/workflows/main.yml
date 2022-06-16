@@ -23,4 +23,4 @@ jobs:
           REPO: git@github.com:Fraudik/Public-CV-for-MSP-course.git
           BRANCH: main
           FOLDER: build
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_PRIVATE_KEY }}
