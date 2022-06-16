@@ -15,7 +15,9 @@ RUN cp /etc/apt/sources.list /etc/apt/sources.list.bak && sed -i -re 's/([a-z]{2
     texlive-latex-extra \
     texlive-latex-recommended \
     texlive-pictures \
-    texlive-science
+    texlive-science \
+    biber \
+    texlive-bibtex-extra
 
 RUN ["chmod", "+x", "/entrypoint.sh"]
 ENTRYPOINT ["/entrypoint.sh"]
