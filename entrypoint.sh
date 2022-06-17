@@ -2,5 +2,7 @@
 
 cd /CV
 pdflatex -interaction=nonstopmode main.tex
+ls
 cd ..
-cp CV/main.pdf main.pdf
+mv CV/main.pdf main.pdf
+ls
