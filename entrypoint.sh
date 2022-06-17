@@ -18,4 +18,5 @@ cp /etc/apt/sources.list /etc/apt/sources.list.bak && sed -i -re 's/([a-z]{2}\.)
     texlive-bibtex-extra \
     texlive-xetex
 
-xelatex -interaction=nonstopmode CV/main.tex
+cp -R CV .
+xelatex -interaction=nonstopmode main.tex
