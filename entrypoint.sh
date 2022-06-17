@@ -15,10 +15,9 @@ cp /etc/apt/sources.list /etc/apt/sources.list.bak && sed -i -re 's/([a-z]{2}\.)
     texlive-pictures \
     texlive-science \
     biber \
-    texlive-bibtex-extra \
-    texlive-xetex
-
+    texlive-bibtex-extra
+    
 cp CV/main.tex ./
 cp CV/altacv.cls ./
 cp CV/page1sidebar.tex ./
-xelatex -interaction=nonstopmode main.tex
+pdflatex -interaction=nonstopmode main.tex
