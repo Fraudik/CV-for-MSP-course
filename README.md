@@ -4,7 +4,7 @@
 
 Блинов Илья Игоревич
 
-Ссылка на GitHub Pages: https://fraudik.github.io/CV-for-MSP-course/CV.pdf
+Ссылка на GitHub Pages: https://fraudik.github.io/CV-with-auto-deployment/CV.pdf
 
 Ссылка на публичный репозиторий: https://github.com/Fraudik/Public-CV-for-MSP-course
 
