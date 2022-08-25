@@ -1,10 +1,12 @@
-# CV, compiling .tex with pdflatex inside container and publishing to public repo
+# Автоматическая компиляция из tex в pdf и публикация резюме
 
-Блинов Илья Игоревич, КНАД 212
+Резюме компилируется в контейнере Docker, а затем с помощью Github Actions публикуется на Github Pages и в отдельном публичном репозитории.
 
-Ссылка на GitHub Pages с резюме: https://fraudik.github.io/CV-for-MSP-course/CV.pdf
+Блинов Илья Игоревич
 
-Ссылка на публичный репозиторий с pdf версией резюме: https://github.com/Fraudik/Public-CV-for-MSP-course
+Ссылка на GitHub Pages: https://fraudik.github.io/CV-for-MSP-course/CV.pdf
+
+Ссылка на публичный репозиторий: https://github.com/Fraudik/Public-CV-for-MSP-course
 
 ## Last Deployment Result:
 
