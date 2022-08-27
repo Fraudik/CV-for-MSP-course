@@ -2,7 +2,7 @@
 
 Резюме компилируется в контейнере Docker, а затем с помощью Github Actions публикуется на Github Pages и в отдельном публичном репозитории.
 
-Блинов Илья Игоревич
+Автор: Блинов Илья Игоревич
 
 Ссылка на GitHub Pages: https://fraudik.github.io/CV-with-auto-deployment/CV.pdf
 
